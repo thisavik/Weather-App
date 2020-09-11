@@ -1,11 +1,9 @@
-console.log("Client side javascript is running!!");
-
 const form = document.getElementById("form");
 const input = document.getElementById("input");
 
 window.addEventListener("offline", function (e) {
     form.style.display = "none"
-  document.getElementById("openweathermap-widget").innerHTML = `<p>Please enable Internet</p>`;
+  document.getElementById("openweathermap-widget").innerHTML = `<p>Please enable Internet connection</p>`;
 });
 
 window.addEventListener("online", function (e) {
