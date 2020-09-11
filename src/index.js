@@ -43,7 +43,7 @@ app.get("/weather", (req, res) => {
     if (error) {
       res.send({ error });
     } else {
-      const API_KEY = process.env.WEATHER_API_KEY
+      const API_KEY = process.env.WEATHER_API_KEY;
       res.send({ id, API_KEY });
     }
   });

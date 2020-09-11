@@ -1,7 +1,6 @@
 const axios = require("axios");
 
 const getId = async (address, callback) => {
-  console.log(address);
   const url =
     "http://api.openweathermap.org/data/2.5/weather?q=" +
     encodeURIComponent(address) +
