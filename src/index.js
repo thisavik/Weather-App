@@ -11,7 +11,7 @@ const geocode = require("./utils/geocode");
 const getId = require("./utils/weather");
 
 // Port at which server is running
-const PORT = 3001 | process.env.PORT;
+const port = process.env.PORT || 3000;
 
 // Define paths for express configuration
 const publicPathDirectory = path.join(__dirname, "../public");
@@ -75,6 +75,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`Server is running at port ${PORT}`);
 });
